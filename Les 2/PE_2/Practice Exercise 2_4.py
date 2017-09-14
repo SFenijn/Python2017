@@ -1,10 +1,10 @@
 #Hier vraag ik om uurloon en maak er een Float van.
 
-uur_L = eval(input('Wat is uw uurloon? '))
+uur_L = float(input('Wat is uw uurloon? '))
 
 #Hier vraag ik hoeveel uur de persoon heeft gewerkt.
 
-uur_t = eval(input('Hoeveel uur heeft u gewerkt?'))
+uur_t = float(input('Hoeveel uur heeft u gewerkt?'))
 
 #Hier bereken ik het salaris.
 
