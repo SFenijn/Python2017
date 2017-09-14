@@ -19,6 +19,7 @@ lst = [ 'Berlioz', 'Borodin', 'Brian','Bartok', 'Bellini', 'Buxtehude', 'Bernste
 lst = (sorted(lst))
 print(lst[0])
 print(lst[-1])
+#proberen voor git.
 
 
 
