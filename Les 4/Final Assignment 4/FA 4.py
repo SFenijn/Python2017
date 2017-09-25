@@ -1,6 +1,6 @@
-leeftijd = (float(input('Wat is uw leeftijd?')))
-afstandKM = (float(input('Wat is de afstand in KM die u aflegt?')))
-weekendrit = input('Is het weekend? ja/nee')
+#leeftijd = (float(input('Wat is uw leeftijd?')))
+#afstandKM = (float(input('Wat is de afstand in KM die u aflegt?')))
+#weekendrit = bool(input('Is het weekend? ja/nee'))
 
 
 def standaardprijs(afstandKM):
@@ -18,18 +18,21 @@ def standaardprijs(afstandKM):
 def ritprijs(leeftijd, weekendrit, afstandKM):
     'kijkt naar uitzonderingen op het standaardtarief.'
     if (leeftijd < 12) or (leeftijd >= 65):
-        if weekendrit == 'ja':
+        if weekendrit == True:
             prijs = afstandKM * 0.65
         else:
             prijs = afstandKM * 0.7
     else:
-        if weekendrit == 'ja':
+        if weekendrit == True:
             prijs = afstandKM * 0.6
         else:
             prijs = afstandKM
     return prijs
 
-print(ritprijs(leeftijd, weekendrit, afstandKM))
+leeftijd = 23
+afstandKM = 20
+weekendrit = True
+print( ritprijs(leeftijd, weekendrit, afstandKM))
 
 
 
